@@ -35,7 +35,7 @@ public class {{cookiecutter.module}}Controller {
     }
 
     @Override
-    public ResponseEntity<{{cookiecutter.module}}Dto> get{cookiecutter.module}}(@PathVariable("{{cookiecutter.module|lower}}Id") Long {{cookiecutter.module|lower}}Id) {
+    public ResponseEntity<{{cookiecutter.module}}Dto> get{{cookiecutter.module}}(@PathVariable("{{cookiecutter.module|lower}}Id") Long {{cookiecutter.module|lower}}Id) {
         {{cookiecutter.module}} {{cookiecutter.module|lower}} = {{cookiecutter.module|lower}}Service.read{{cookiecutter.module}}({{cookiecutter.module|lower}}Id);
         if (null == {{cookiecutter.module|lower}}){
             return ResponseEntity.ok(EMPTY);
@@ -44,7 +44,7 @@ public class {{cookiecutter.module}}Controller {
     }
 
     @Override
-    public ResponseEntity<{{cookiecutter.module}}Dto> save{cookiecutter.module|lower}}(@PathVariable("{{cookiecutter.module|lower}}Id") Long {{cookiecutter.module|lower}}Id,
+    public ResponseEntity<{{cookiecutter.module}}Dto> save{{cookiecutter.module|lower}}(@PathVariable("{{cookiecutter.module|lower}}Id") Long {{cookiecutter.module|lower}}Id,
                                                 @Valid @RequestBody {{cookiecutter.module}}Dto {{cookiecutter.module|lower}}Dto) {
 
         {{cookiecutter.module}} {{cookiecutter.module|lower}} = {{cookiecutter.module}}Mapper.INSTANCE.model({{cookiecutter.module|lower}}Dto);
